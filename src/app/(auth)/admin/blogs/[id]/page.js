@@ -19,7 +19,6 @@ export default function EditBlogs() {
         content:'',
         _id:''
     });
-<<<<<<< HEAD
     const [dataKomentar, setDataKomentar] = useState([])
     const onFetchKomentar=async()=>{
         try{
@@ -32,10 +31,6 @@ export default function EditBlogs() {
             setDataKomentar([])
         }
     }
-=======
-
-
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
     const fetDataById = async ()=>{
         try{
             const res = await fetch(`/api/blogs/${params.id}`);
@@ -68,10 +63,6 @@ export default function EditBlogs() {
             if (editorRef.current) {
                 const body = data
                 body.content = editorRef.current.getContent();
-<<<<<<< HEAD
-=======
-
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
                 let res = await fetch(`/api/blogs/${data._id}`, {
                     method:'PUT',
                     body: JSON.stringify(body),
@@ -95,10 +86,7 @@ export default function EditBlogs() {
 
     useEffect(()=>{
         fetDataById()
-<<<<<<< HEAD
         onFetchKomentar()
-=======
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
     },[])
 
     return (
@@ -125,7 +113,7 @@ export default function EditBlogs() {
 
             <Editor
                     id='content'
-                    apiKey='hz9os6h0p1826jcqknks4q1fm8yl9khctaa7nmexkf0rnx2e'
+                    apiKey='8feqz9pkoxc6lo2xfe9zzfpng8nhmmpmgzdzkxltllun3d51'
                     onInit={(_evt, editor) => editorRef.current = editor}
                     initialValue={data.content}
                     init={{
@@ -151,7 +139,6 @@ export default function EditBlogs() {
             </button> 
         </Card>
 
-<<<<<<< HEAD
         {
             dataKomentar.map( (komen,idx) => <Card className="mt-5" key={idx} title={komen.nama}>
                 <div  dangerouslySetInnerHTML={{ __html: komen.komentar }} />
@@ -163,8 +150,6 @@ export default function EditBlogs() {
             )
         }
 
-=======
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
         <ConfigDialog  
             onOkOny={()=>onOkOnly()} 
             showDialog={modal}

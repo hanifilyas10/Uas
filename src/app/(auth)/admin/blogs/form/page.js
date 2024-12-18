@@ -2,11 +2,7 @@
 import Card from '../../../../../components/card';
 import ConfigDialog from '../../../../../components/ConfirmDialog'
 import { useState } from 'react'
-<<<<<<< HEAD
 import { useEffect , useRef } from 'react';
-=======
-import { useRef } from 'react';
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
 import { Editor } from '@tinymce/tinymce-react';
 
 export default function AdminBlogsForm() {
@@ -14,10 +10,7 @@ export default function AdminBlogsForm() {
     const [modal, setModal] = useState(false)
     const [modalTitle, setModalTitle] = useState("")
     const [modalMessage, setModalMessage] = useState("")
-<<<<<<< HEAD
     const [dataKomentar, setDataKomentar] = useState([])
-=======
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
     const [data, setData] = useState({
         title:'',
         subTitle:'',
@@ -69,7 +62,6 @@ export default function AdminBlogsForm() {
           setModalMessage(err.message)
         }
       }
-<<<<<<< HEAD
       const onFetchKomentar=async()=>{
         try{
             
@@ -87,9 +79,6 @@ export default function AdminBlogsForm() {
     useEffect(()=>{
         onFetchKomentar()
     },[])
-=======
-
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
     return (
     <>
 
@@ -117,7 +106,7 @@ export default function AdminBlogsForm() {
                 <label>Content</label>
                 <Editor
                     id='content'
-                    apiKey='hz9os6h0p1826jcqknks4q1fm8yl9khctaa7nmexkf0rnx2e'
+                    apiKey='8feqz9pkoxc6lo2xfe9zzfpng8nhmmpmgzdzkxltllun3d51'
                     onInit={(_evt, editor) => editorRef.current = editor}
                     initialValue={data.content}
                     init={{

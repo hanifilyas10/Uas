@@ -32,16 +32,10 @@ export default function Dashboard() {
         <div className='flex w-full bg-white rounded-xl '>
           <div className="flex-1 p-10">
             <div className="font-extrabold text-[48px] mt-10">
-<<<<<<< HEAD
               <div>I&lsquo;m M Hanif Ilyas
               </div>
               <div>
                 <span className="text-[#FFB400]">Fullstack</span> Developer 
-=======
-              <div>I&lsquo;m Rayan Adlrdard</div>
-              <div>
-                <span className="text-[#FFB400]">Front-end</span> Developer 
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
               </div>
             </div>
             <p className="text-[#767676]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</p>
@@ -52,11 +46,7 @@ export default function Dashboard() {
             </button>
           </div>
           <div>
-<<<<<<< HEAD
             <img src="images/avatar.png" />
-=======
-            <img src="images/btr.png" />
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
           </div>
         </div>
 

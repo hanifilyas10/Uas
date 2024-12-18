@@ -116,11 +116,7 @@ export default function Register(){
                     <p className="mt-10 text-center text-sm text-gray-500">
                         Already have account?{' '}
                         <a href="/login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-<<<<<<< HEAD
                             login new
-=======
-                            login noew
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
                         </a>
                     </p>
                 </div>

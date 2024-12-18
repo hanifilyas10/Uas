@@ -61,7 +61,7 @@ export default function BalasKomen() {
         <label>Content</label>
         <Editor
                     id='balaskomen'
-                    apiKey='hz9os6h0p1826jcqknks4q1fm8yl9khctaa7nmexkf0rnx2e'
+                    apiKey='8feqz9pkoxc6lo2xfe9zzfpng8nhmmpmgzdzkxltllun3d51'
                     onInit={(_evt, editor) => editorRef.current = editor}
                     initialValue={data.balaskomen}
                     init={{

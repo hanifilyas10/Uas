@@ -15,11 +15,7 @@ export default function PublicMenu() {
             <div className="max-w-5xl mx-auto px-6 md:px-12 xl:px-6">
               <div className="flex flex-wrap items-center justify-between">
                 <div>
-<<<<<<< HEAD
                   <a href="/">M HANIF ILYAS</a>
-=======
-                  <a href="/">Rayan Adlrdard</a>
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
                 </div>
                 <div>
                   <ul className="flex flex-row gap-6">
@@ -27,12 +23,6 @@ export default function PublicMenu() {
                       <a className="btn-link" href="/about">About</a>
                     </li> */}
                     <li className="mt-1">
-<<<<<<< HEAD
-=======
-                      <a className="btn-link" href="/work">Work</a>
-                    </li>
-                    <li className="mt-1">
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
                       <a className="btn-link" href="/blogs">Blogs</a>
                     </li>
                     <li className="mt-1">

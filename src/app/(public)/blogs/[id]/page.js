@@ -1,6 +1,5 @@
 "use client"
 import { useState, useEffect } from 'react'
-<<<<<<< HEAD
 import Card from '../../../../components/card';
 import { useParams } from 'next/navigation'
 // Komentar
@@ -40,14 +39,6 @@ export default function Blogsbyid(){
         setDataKomen({...datakomen, [e.target.name]: e.target.value })
     }
     // End Komentar
-=======
-import { useParams } from 'next/navigation'
-
-export default function Blogsbyid(){
-    const params = useParams();
-    const [data, setData] = useState(null)
-    const [isLoading, setLoading] = useState(true)
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
 
     const onFetchBlogs=async()=>{
         try{
@@ -63,7 +54,6 @@ export default function Blogsbyid(){
         }
     }
 
-<<<<<<< HEAD
     const onFetchKomentar=async()=>{
         try{
             setLoadingKomentar(true)
@@ -122,10 +112,6 @@ export default function Blogsbyid(){
     useEffect(()=>{
         onFetchBlogs()
         onFetchKomentar()
-=======
-    useEffect(()=>{
-        onFetchBlogs()
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
     },[])
 
     if(isLoading) return (<>Loading...</>)
@@ -134,7 +120,6 @@ export default function Blogsbyid(){
         <>
             <div className='margin-0 mx-auto w-2/3'>
                 <h2 className="text-center text-[32px] font-bold w-full">{data.title}</h2>
-<<<<<<< HEAD
                 <div className='mb-40 mt-10  ' dangerouslySetInnerHTML={{ __html: data.content }}/>
             </div>
 
@@ -163,7 +148,7 @@ export default function Blogsbyid(){
                 <label>Komentar</label>
                 <Editor
                     id='komentar'
-                    apiKey='hz9os6h0p1826jcqknks4q1fm8yl9khctaa7nmexkf0rnx2e'
+                    apiKey='8feqz9pkoxc6lo2xfe9zzfpng8nhmmpmgzdzkxltllun3d51'
                     onInit={(_evt, editor) => editorRef.current = editor}
                     initialValue={datakomen.komentar}
                     init={{
@@ -217,10 +202,6 @@ export default function Blogsbyid(){
             onOk={()=>onCancel()} 
             isOkOnly={true} />
         {/* End Komentar */}
-=======
-                <div className='mt-10  ' dangerouslySetInnerHTML={{ __html: data.content }}/>
-            </div>
->>>>>>> 5dc8a079a816806dbe1e014be26b2024c674e959
         </>
     );
 }
